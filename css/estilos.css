@@ -1,0 +1,351 @@
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    height: 90px;
+}
+/* PRIMER SELECTOR DECENTENDE */
+/*NAVEGACIÓN*/
+header
+{
+    background-color:white;
+    color:#CD5C5C;
+    border-bottom: 2px #CD5C5C solid;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+figure
+{
+    margin:0;
+}
+
+ol, ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu
+{
+    /* inherit ayuda a .menu a hereda de la altura clase .header*/
+    height: inherit; 
+}
+.header ol
+{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li 
+{
+    height: inherit;
+}
+.header a {
+    color:#CD5C5C;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    /* Añade display flex a los elementos anchor <a> para poder 
+    centrarlos ahora que ya heredaron una altura determinada. */
+    padding: 0 10px 10px 10px;
+}
+
+/*---- TITULOS-----*/
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+h1
+{
+    font-size: 50px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: #f4fbff;
+    text-shadow: 2px 2px 15px black;/*sombreado*/
+    /* text-transform: uppercase;
+    text-decoration:underline;*/
+    margin: 0px;
+    text-align: center;
+    transition: all 0.5s;
+    /* padding:10px 20px; */
+    /* border: 2px solid red; */
+}
+h1 strong
+{
+    color:#CD5C5C;
+}
+
+.title-product, 
+.title-about-us
+{
+    color:#CD5C5C;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.button_shop
+{   
+    border-radius: 5px;
+    background-color:#D5DBDB;
+    border: none;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    padding: 15px; 
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+.button_shop:hover 
+{
+    background-color:#CD5C5C;
+    color: white;
+} 
+.hero{
+    height: 480px; /*300*/
+    background-image:url('/images/hero.jpg');
+    background-color: #CD5C5C;
+    background-size: cover; /*700px 500px */
+    background-repeat: no-repeat;
+    /* background-position-x: right; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;  
+}
+
+
+/*----PORTAFOLIO----*/
+.about-us
+{
+    background: #fafafa;
+    padding: 20px;
+}
+
+.about-usContainer
+{
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+  /* color: blue; */
+  /* border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; */
+  /* border: 1px solid gray; */
+  border-radius: 10px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  /* margin-right
+  margin-left 
+  margin-top */
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+
+.about-us-details
+{
+    width: 500px;    
+}
+
+.about-us-title
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* .project-course,  */
+.about-us-date, 
+.about-us-url
+{
+    margin: 10px 0;
+}
+
+.about-us-description
+{
+    font-size: 20px;
+}
+
+
+.about-us-imageContainer
+{
+    width: 500px;
+    margin-right: 5px;
+}
+.about-us-imageContainer img{
+    border-radius: 8px;
+}
+/*-----Event/Productos---*/
+.product-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product
+{
+    /* border: 1px solid #CD5C5C; */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;/*para que ocupen su tamaño designado*/
+    border-radius: 10px;
+    overflow: hidden;
+    background:#f4fbff;
+}
+
+.product img
+{
+    width: 480px;/*480*/
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-detail
+{
+    margin: 20px;
+    margin-top: -40px;
+    background:white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.product-title
+{
+    font-size:30px;
+}
+.product-description
+{
+    text-align: left;
+}
+
+.product-url
+{
+    border:1px solid; /*usa el mismo color del texto*/
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #CD5C5C;
+
+ }
+/* ----Contact----*/
+.title-contact
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+}
+.contac
+{
+    background:#EAA1A1;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-email input
+{
+    border: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px
+}
+
+.form-email button
+{
+    display: block;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100px;
+    margin: 5px 0 30px;
+    padding: 10px 5px;
+}
+
+/*.social
+{
+     border: 1px solid red; 
+}*/
+
+.social-link
+{   
+    display: inline-block;
+    width: 50px;
+    height:50px;
+    /* border: 1px solid white; */
+    background-size: 50px 50px;
+    margin: 0 10px
+}
+
+.social-link.instagram
+{
+    background-image: url('../images/instagram.svg');
+}
+
+.social-link.facebook
+{
+    background-image: url('../images/facebook.svg');
+}
+
+.social-link.twitter
+{
+    background-image: url('../images/twitter.svg');
+}
+/* -----Footer ----*/
+.footer
+{
+    color: white;
+    background-color:#CD5C5C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;/*espaciado*/
+  }
+  
+  .footer img {
+    vertical-align: middle;
+  }
+  
+  .footer a {
+    color: white;
+  }
+/*---CENTRAR LOS ELEMENTOS---*/
+/*llado también como wrapper*/
+.containter
+{
+    /* border: 1px solid red; */
+    width: 1000px;
+    height: inherit;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: initial;
+}
